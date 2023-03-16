@@ -1,21 +1,15 @@
 //
 //  ContentView.swift
-//  UberDriver2
+//  UperDriver
 //
-//  Created by Shrouk Yasser on 16/03/2023.
+//  Created by Fady Gamil on 27/02/2023.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        ProfileScreen()
     }
 }
 
