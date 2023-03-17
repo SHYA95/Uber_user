@@ -7,9 +7,14 @@
 
 import SwiftUI
 
+//struct ContentView: View {
+//    var body: some View {
+//        MyWallet1()
+//    }
+//}
 struct ContentView: View {
     var body: some View {
-        ProfileScreen()
+        SignUpScreen()
     }
 }
 
@@ -18,3 +23,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

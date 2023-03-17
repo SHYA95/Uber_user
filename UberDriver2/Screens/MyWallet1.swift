@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MyWallet1: View {
     var body: some View {
+        
         NavigationView{
             VStack{
                 VStack{

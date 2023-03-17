@@ -13,6 +13,7 @@ struct WelcomeScreen: View {
     var body: some View {
         NavigationView{
         VStack{
+       
             Image("uperLogo")
             Text("Drive with pride ")
             //Spacer()
