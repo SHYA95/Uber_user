@@ -24,7 +24,7 @@ struct SignUpScreen: View {
             Image("Group 3")
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(Color.white)
-                .padding(.top, 40)
+                .padding(.top, 0)
             Text("Create an account")
                 .font(.footnote)
                 .padding(.bottom, 50.0)
@@ -163,7 +163,7 @@ struct SignUpScreen: View {
                 .font(.title3)
             NavigationLink(destination:LoginScreen(userName: "") ,isActive:$isLoginScreen ){
                 Button(action: {
-                    // Handle login action
+                    isLoginScreen.toggle()
                 }) {
                     Text("Login")
                     
@@ -172,11 +172,11 @@ struct SignUpScreen: View {
                     
                         .foregroundColor(.black)
                 }
-            }
+            }.navigationBarHidden(true)
             
             Spacer() // Add additional spacer to fill the remaining space
             
-        }
+        }.navigationBarHidden(true)
     }
 }
 

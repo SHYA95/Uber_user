@@ -12,7 +12,7 @@ struct LoginScreen: View {
     var body: some View {
         
         VStack{
-           
+            CustomNavBarView(navBarTitle: " ")
             Image("uperLogo")
             Text("Drive with pride")
             Spacer()
@@ -26,7 +26,7 @@ struct LoginScreen: View {
             Button("Login                     "){
                 
             }.tint(Color.black).padding().foregroundColor(.white).buttonStyle(.borderedProminent)
-       
+                .navigationBarHidden(true)
             
         
             

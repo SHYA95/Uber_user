@@ -23,7 +23,7 @@ struct WelcomeScreen: View {
             }){
                 Text("Create an account")
             }.tint(Color.black).padding().foregroundColor(.white).buttonStyle(.borderedProminent)
-            }
+            }.navigationBarHidden(true)
             Text("Have an account?")
             NavigationLink(destination:LoginScreen(userName: "") ,isActive:$isLoginScreen ){
             Button(action:{
