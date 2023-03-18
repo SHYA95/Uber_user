@@ -10,7 +10,8 @@ import SwiftUI
 struct DriverRegistration5: View {
     var body: some View {
         NavigationView{
-            VStack{
+            VStack(spacing : 50){
+                StarsView(rating: 4)
                 
                 Text("Take a photo of your vehicle ")
                     .padding(.bottom, 50.0)
@@ -20,13 +21,20 @@ struct DriverRegistration5: View {
                     Button(action:{
                         
                     }){
-                        Text("uplaod")
+                        Image("Upload")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 18, height: 18)
+                            .foregroundColor(.black)
+                            .padding(.trailing, 8)
+                        Text("Upload")
                             .font(.callout)
                     }.tint(Color.gray.opacity(0.2)).padding().foregroundColor(.black).buttonStyle(.borderedProminent)
-                    
-                }.frame(width: UIScreen.main.bounds.width - 80, height: 150.0).overlay(
-                    RoundedRectangle(cornerRadius: 16)
-                        .stroke(.black, lineWidth: 1))
+                                        
+                                    }.frame(width: UIScreen.main.bounds.width - 80, height: 150.0).overlay(
+                                        RoundedRectangle(cornerRadius: 16)
+                                            .stroke(.black, lineWidth: 1))
+                
                 
                 HStack{
                     Button(action:{

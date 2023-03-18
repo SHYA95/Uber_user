@@ -18,186 +18,185 @@ struct DriverRegistration: View {
     var dropDownList = ["item1", "item2", "item3", "item4"]
     var body: some View {
         NavigationView{
-        VStack{
-//            HStack{
-//                Image("Go Back")
-//                Text("Driver Registration ")
-//            }
-            
-            Text("Add your vehicle your vehicle  must be 2005 ").font(.callout).multilineTextAlignment(.leading).lineLimit(2)
-            Text(" or newer").font(.callout).multilineTextAlignment(.leading).lineLimit(2)
-            HStack{
-                Text("Type of vehicle").padding([.top, .leading], 20.0)
-                Spacer()
-            }
-            ////dropDownbutton
             VStack{
-                Menu {
-                    ForEach(dropDownList, id: \.self){ client in
-                        Button(client) {
-                            self.value = client
-                        }
-                    }
-                }label: {
-                    VStack(spacing: 5){
-                        HStack{
-                            
-                            Text(value.isEmpty ? placeholder1 : value)
-                                .foregroundColor(value.isEmpty ? .gray : .black)
-                            
-                            Image(systemName: "chevron.down")
-                                .foregroundColor(Color.black)
-                                .font(Font.system(size: 20))
-                        }
-                        .padding(.horizontal)
-
-                    }
+                
+                Text("Add your vehicle your vehicle  must be 2005 ").font(.callout).multilineTextAlignment(.leading).lineLimit(2)
+                Text(" or newer").font(.callout).multilineTextAlignment(.leading).lineLimit(2)
+                HStack{
+                    Text("Type of vehicle").padding([.top, .leading], 20.0)
+                    Spacer()
                 }
-            } .frame(height: 15.0)
-            .padding(.all).overlay(
-                RoundedRectangle(cornerRadius: 16)
-                    .stroke(.black, lineWidth: 1)
-            )
-            HStack{
-                Text("Model").padding([.leading], 20.0)
-                Spacer()
-            }
-            ////dropDownbutton
-            VStack{
-                Menu {
-                    ForEach(dropDownList, id: \.self){ client in
-                        Button(client) {
-                            self.value = client
-                        }
-                    }
-                }label: {
-                    VStack(spacing: 5){
-                        HStack{
-                            
-                            Text(value.isEmpty ? placeholder2 : value)
-                                .foregroundColor(value.isEmpty ? .gray : .black)
-                            
-                            Image(systemName: "chevron.down")
-                                .foregroundColor(Color.black)
-                                .font(Font.system(size: 20))
-                        }
-                        .padding(.horizontal)
-
-                    }
-                }
-            }.frame(height: 15.0)
-            .padding(.all).overlay(
-                RoundedRectangle(cornerRadius: 16)
-                    .stroke(.black, lineWidth: 1)
-            )
-            
-            HStack{
+                ////dropDownbutton
+                
+                
                 VStack{
-                   
-                    Text("Year").padding(.trailing, 90.0)
-                    ////dropDownbutton
-                    VStack{
-                        Menu {
-                            ForEach(dropDownList, id: \.self){ client in
-                                Button(client) {
-                                    self.value = client
-                                }
-                            }
-                        }label: {
-                            VStack(spacing: 5){
-                                HStack{
-                                    
-                                    Text(value.isEmpty ? placeholder3 : value)
-                                        .foregroundColor(value.isEmpty ? .gray : .black)
-                                    
-                                    Image(systemName: "chevron.down")
-                                        .foregroundColor(Color.black)
-                                        .font(Font.system(size: 20 ))
-                                }
-                                .padding(.horizontal)
-
+                    Menu {
+                        ForEach(dropDownList, id: \.self){ client in
+                            Button(client) {
+                                self.value = client
                             }
                         }
-                    }.frame(height: 15.0)
+                    }label: {
+                        VStack(spacing: 5){
+                            HStack{
+                                
+                                Text(value.isEmpty ? placeholder1 : value)
+                                    .foregroundColor(value.isEmpty ? .gray : .black)
+                                
+                                Image(systemName: "chevron.down")
+                                    .foregroundColor(Color.black)
+                                    .font(Font.system(size: 20))
+                            }
+                            .padding(.horizontal)
+                            
+                        }
+                    }
+                } .frame(height: 15.0)
                     .padding(.all).overlay(
-                        RoundedRectangle(cornerRadius: 16)
+                        RoundedRectangle(cornerRadius: 5)
                             .stroke(.black, lineWidth: 1)
                     )
+                HStack{
+                    Text("Model").padding([.leading], 20.0)
+                    Spacer()
+                }
+                ////dropDownbutton
+                VStack{
+                    Menu {
+                        ForEach(dropDownList, id: \.self){ client in
+                            Button(client) {
+                                self.value = client
+                            }
+                        }
+                    }label: {
+                        VStack(spacing: 5){
+                            HStack{
+                                
+                                Text(value.isEmpty ? placeholder2 : value)
+                                    .foregroundColor(value.isEmpty ? .gray : .black)
+                                
+                                Image(systemName: "chevron.down")
+                                    .foregroundColor(Color.black)
+                                    .font(Font.system(size: 20))
+                            }
+                            .padding(.horizontal)
+                            
+                        }
+                    }
+                }.frame(height: 15.0)
+                    .padding(.all).overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(.black, lineWidth: 1)
+                    )
+                
+                HStack{
+                    VStack{
+                        
+                        Text("Year").padding(.trailing, 90.0)
+                        ////dropDownbutton
+                        VStack{
+                            Menu {
+                                ForEach(dropDownList, id: \.self){ client in
+                                    Button(client) {
+                                        self.value = client
+                                    }
+                                }
+                            }label: {
+                                VStack(spacing: 5){
+                                    HStack{
+                                        
+                                        Text(value.isEmpty ? placeholder3 : value)
+                                            .foregroundColor(value.isEmpty ? .gray : .black)
+                                        
+                                        Image(systemName: "chevron.down")
+                                            .foregroundColor(Color.black)
+                                            .font(Font.system(size: 20 ))
+                                    }
+                                    .padding(.horizontal)
+                                    
+                                }
+                            }
+                        }.frame(height: 15.0)
+                            .padding(.all).overlay(
+                                RoundedRectangle(cornerRadius:5)
+                                    .stroke(.black, lineWidth: 1)
+                            )
+                        
+                    }.padding([.top, .leading])
+                    VStack{
+                        
+                        Text("Color").padding(.trailing, 90.0)
+                        ////dropDownbutton
+                        VStack{
+                            Menu {
+                                ForEach(dropDownList, id: \.self){ client in
+                                    Button(client) {
+                                        self.value = client
+                                    }
+                                }
+                            }label: {
+                                VStack(spacing: 5){
+                                    HStack{
+                                        
+                                        Text(value.isEmpty ? placeholder4 : value)
+                                            .foregroundColor(value.isEmpty ? .gray : .black)
+                                        
+                                        Image(systemName: "chevron.down")
+                                            .foregroundColor(Color.black)
+                                            .font(Font.system(size: 20))
+                                    }
+                                    .padding(.horizontal)
+                                    
+                                }
+                            }
+                        }.frame(height: 15.0)
+                            .padding(.all).overlay(
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(.black, lineWidth: 1)
+                            )
+                        
+                    }.padding([.top, .trailing])
+                }
+                HStack{
+                    Text("Licence number").padding()
+                    Spacer()
+                }
+                ////dropDownbutton
+                VStack{
+                    Menu {
+                        ForEach(dropDownList, id: \.self){ client in
+                            Button(client) {
+                                self.value = client
+                            }
+                        }
+                    }label: {
+                        VStack(spacing: 5){
+                            HStack{
+                                
+                                Text(value.isEmpty ? placeholder5 : value)
+                                    .foregroundColor(value.isEmpty ? .gray : .black)
+                                
+                                Image(systemName: "chevron.down")
+                                    .foregroundColor(Color.black)
+                                    .font(Font.system(size: 20))
+                            }
+                            .padding(.horizontal)
+                            
+                        }
+                    }
+                }.frame(height: 15.0)
+                    .padding(.all).overlay(
+                        RoundedRectangle(cornerRadius: 5)
+                            .stroke(.black, lineWidth: 1)
+                    )
+                
+                
+                Button("   Continue               "){
                     
-                }.padding([.top, .leading])
-                VStack{
-                   
-                    Text("Color").padding(.trailing, 90.0)
-                    ////dropDownbutton
-                    VStack{
-                        Menu {
-                            ForEach(dropDownList, id: \.self){ client in
-                                Button(client) {
-                                    self.value = client
-                                }
-                            }
-                        }label: {
-                            VStack(spacing: 5){
-                                HStack{
-                                    
-                                    Text(value.isEmpty ? placeholder4 : value)
-                                        .foregroundColor(value.isEmpty ? .gray : .black)
-                                    
-                                    Image(systemName: "chevron.down")
-                                        .foregroundColor(Color.black)
-                                        .font(Font.system(size: 20))
-                                }
-                                .padding(.horizontal)
-
-                            }
-                        }
-                    }.frame(height: 15.0)
-                    .padding(.all).overlay(
-                        RoundedRectangle(cornerRadius: 16)
-                            .stroke(.black, lineWidth: 1)
-                    )
-                   
-                }.padding([.top, .trailing])
-            }
-            HStack{
-                Text("Licence number").padding()
-                Spacer()
-            }
-            ////dropDownbutton
-            VStack{
-                Menu {
-                    ForEach(dropDownList, id: \.self){ client in
-                        Button(client) {
-                            self.value = client
-                        }
-                    }
-                }label: {
-                    VStack(spacing: 5){
-                        HStack{
-                            
-                            Text(value.isEmpty ? placeholder5 : value)
-                                .foregroundColor(value.isEmpty ? .gray : .black)
-                            
-                            Image(systemName: "chevron.down")
-                                .foregroundColor(Color.black)
-                                .font(Font.system(size: 20))
-                        }
-                        .padding(.horizontal)
-
-                    }
-                }
-            }.frame(height: 15.0)
-            .padding(.all).overlay(
-                RoundedRectangle(cornerRadius: 16)
-                    .stroke(.black, lineWidth: 1)
-            )
-           
-            Button("   Continue              "){
-               
-            }.tint(Color.black).padding().foregroundColor(.white).buttonStyle(.borderedProminent)
-           
-        }.frame(height: 10.0).navigationTitle(Text("Driver Registration ")
-                            .font(.footnote))
+                }.tint(Color.black).padding().foregroundColor(.white).buttonStyle(.borderedProminent)
+                
+            }.frame(height: 10.0).navigationTitle("Driver Registration")
+            
         }
     }
 }

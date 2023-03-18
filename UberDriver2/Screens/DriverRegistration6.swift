@@ -10,10 +10,11 @@ import SwiftUI
 struct DriverRegistration6: View {
     var body: some View {
         NavigationView{
-            VStack{
+            VStack(spacing : 25){
+                StarsView(rating: 5)
                 
                 Text("Upload your profile photo ")
-                    .padding(.bottom, 50.0)
+                    .padding(.bottom, 20.0)
                 Spacer()
                 
                 VStack{
@@ -29,10 +30,15 @@ struct DriverRegistration6: View {
                     Button(action:{
                         
                     }){
-                        Text("uplaod")
+                        Image("Upload")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 18, height: 18)
+                            .foregroundColor(.black)
+                            .padding(.trailing, 8)
+                        Text("Upload")
                             .font(.callout)
                     }.tint(Color.gray.opacity(0.2)).padding().foregroundColor(.black).buttonStyle(.borderedProminent)
-                    
                     
                 }
                 HStack{

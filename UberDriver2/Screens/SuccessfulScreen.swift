@@ -19,7 +19,7 @@ struct SuccessfulScreen: View {
                     Image("Vector")
                     
                         
-                }.padding()
+                }.padding(100)
                 
                 Text("Your  application is submittedand is under review").padding()
                 Spacer()

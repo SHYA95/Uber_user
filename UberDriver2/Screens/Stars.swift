@@ -53,19 +53,24 @@ struct StarsView: View {
     }
  }
 
-
-
- private var emptyStar: some View {
-//    Image(systemName: "circle").foregroundColor(StarsView.COLOR).frame(width: 8.0, height: 8.0)
-    HStack(spacing: 0){
-    Image(systemName: "circle")
-    .resizable()
-    .frame(width:20, height: 20)
-    .padding(0)
+    private var emptyStar: some View {
+    //    Image(systemName: "circle").foregroundColor(StarsView.COLOR).frame(width: 8.0, height: 8.0)
+        HStack(spacing: 0){
+        Image(systemName: "circle")
+        .resizable()
+        .frame(width:20, height: 20)
+        .padding(0)
+            .background(Color.white)
         .background(Color.white)
-    .background(Color.white)
-    .clipShape(Circle())
-      
+        .clipShape(Circle())
+          
+        }
+     }
     }
- }
+struct StarsView_Previews: PreviewProvider {
+    static var previews: some View {
+        StarsView(rating:0.5 )
+    }
 }
+
+
