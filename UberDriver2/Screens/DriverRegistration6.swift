@@ -30,7 +30,7 @@ struct DriverRegistration6: View {
                     Button(action:{
                         
                     }){
-                        Image("Upload")
+                        Image(systemName: "arrow.up.to.line.compact")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 18, height: 18)

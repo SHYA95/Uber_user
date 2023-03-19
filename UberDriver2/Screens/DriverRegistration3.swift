@@ -11,7 +11,7 @@ struct DriverRegistration3: View {
     var body: some View {
         NavigationView{
             VStack(spacing: 50){
-                StarsView(rating: 2)
+                StarsView(rating: 1)
                 Text("Take a photo of your vehicle licence")
                     .padding(.bottom, 0)
                 Spacer()

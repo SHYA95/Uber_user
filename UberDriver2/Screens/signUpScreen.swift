@@ -7,14 +7,22 @@
 
 import SwiftUI
 
-struct SignUpScreen: View {
+struct SignUpScreen: View, SingUPDataLoaded {
+    func isSingUPDone(message: String) {
+        print(message)
+    }
+    
+    func isSingUPFail(message: String) {
+        print(message)
+    }
+    
     @State var isLoginScreen: Bool = false
     @State var number = ""
     @State var firstName = ""
     @State var lastName = ""
     @State var userName = ""
     @State var mail = ""
-    
+    var api = SingUPApiHandler()
     var body: some View {
         
         VStack(spacing: 0) {
@@ -156,7 +164,8 @@ struct SignUpScreen: View {
             //sign up button
             
             Button("  Sign Up  "){
-                
+                api.delegate = self
+                api.RegisterMethod(phone: number, userName: userName, email: mail, FirstName: firstName, LastName: lastName)
             }.tint(Color.black).padding().foregroundColor(.white).buttonStyle(.borderedProminent)
             
             Text(" Have  an  account")
@@ -185,3 +194,4 @@ struct SignUpScreen_Previews: PreviewProvider {
         SignUpScreen()
     }
 }
+

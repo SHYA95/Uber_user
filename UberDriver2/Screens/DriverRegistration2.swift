@@ -10,8 +10,8 @@ import SwiftUI
 struct DriverRegistration2: View {
     var body: some View {
         NavigationView{
-            VStack(spacing: 70){
-                StarsView(rating: 1)
+            VStack(spacing: 50){
+                StarsView(rating: 0)
                 
                 Text("Take a photo of your driver’s licence")
                    

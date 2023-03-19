@@ -25,31 +25,19 @@ struct CustomNavBarView: View {
                         .foregroundColor(.black)
                 }
                 Spacer()
+                Text(navBarTitle)
+                    .font(.system(size: 16, weight: .bold, design: .default))
+                    .foregroundColor(.black)
+                    .padding(.top, 10)
+                Spacer()
             }
             .padding(.horizontal)
             .frame(height: 44)
             .background(Color.clear) // Set background color to transparent
             .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
             
-            Spacer() // Add spacer to push the title to the center
+
             
-            Text(navBarTitle)
-                .font(.system(size: 16, weight: .bold, design: .default))
-                .foregroundColor(.black)
-                .padding(.top, 10)
-                .frame(maxWidth: .infinity) // Set the frame to stretch the title to fill the available space
-            
-            Spacer() // Add another spacer to push the title to the center
-            
-            .padding(.horizontal)
-            .frame(height: 44)
-            .background(Color.clear) // Set background color to transparent
-            .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
-            
-            Text(navBarTitle)
-                .font(.system(size: 16, weight: .bold, design: .default))
-                .foregroundColor(.black)
-                .padding(.top, 10)
         }
     }
 }

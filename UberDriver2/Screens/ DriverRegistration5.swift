@@ -11,17 +11,17 @@ struct DriverRegistration5: View {
     var body: some View {
         NavigationView{
             VStack(spacing : 50){
-                StarsView(rating: 4)
+                StarsView(rating: 3)
                 
                 Text("Take a photo of your vehicle ")
-                    .padding(.bottom, 50.0)
+                    .padding(.bottom, 0)
                 Spacer()
                 
                 VStack{
                     Button(action:{
                         
                     }){
-                        Image("Upload")
+                        Image(systemName: "arrow.up.to.line.compact")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 18, height: 18)

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2A14CC2129C511EF008BBE5C /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A14CC2029C511EF008BBE5C /* Stars.swift */; };
+		2AC93DF529C6FF2000804CE4 /* Login Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC93DF329C6FF2000804CE4 /* Login Api.swift */; };
+		2AC93DF629C6FF2000804CE4 /* SingUP Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC93DF429C6FF2000804CE4 /* SingUP Api.swift */; };
+		2AC93DFA29C6FF2D00804CE4 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC93DF829C6FF2D00804CE4 /* LoginModel.swift */; };
+		2AC93DFB29C6FF2D00804CE4 /* SingUPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC93DF929C6FF2D00804CE4 /* SingUPModel.swift */; };
 		2AF6E27529C3329200E8253B /* UberDriver2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E27429C3329200E8253B /* UberDriver2App.swift */; };
 		2AF6E28929C332C300E8253B /* CustomTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E28329C332C300E8253B /* CustomTrip.swift */; };
 		2AF6E28A29C332C300E8253B /* CustomNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E28429C332C300E8253B /* CustomNotification.swift */; };
@@ -36,16 +40,21 @@
 		2AF6E2BC29C332DF00E8253B /*  DriverRegistration5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E2A329C332DF00E8253B /*  DriverRegistration5.swift */; };
 		2AF6E2BD29C332DF00E8253B /* SuccessfulScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E2A429C332DF00E8253B /* SuccessfulScreen2.swift */; };
 		2AF6E2BE29C332DF00E8253B /* NotificationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E2A529C332DF00E8253B /* NotificationScreen.swift */; };
-		2AF6E2BF29C332DF00E8253B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E2A629C332DF00E8253B /* SwiftUIView.swift */; };
 		2AF6E2C029C332DF00E8253B /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E2A729C332DF00E8253B /* LoginScreen.swift */; };
 		2AF6E2C129C332DF00E8253B /* AddBankAccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E2A829C332DF00E8253B /* AddBankAccountScreen.swift */; };
 		2AF6E2C329C3330700E8253B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E2C229C3330700E8253B /* ContentView.swift */; };
 		2AF6E2C529C3331600E8253B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF6E2C429C3331600E8253B /* Assets.xcassets */; };
 		2AF6E2C929C3420F00E8253B /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF6E2C829C3420F00E8253B /* CustomNavBar.swift */; };
+		6310F905BE193A03BA028ED1 /* Pods_UberDriver2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAD7DCA44755553F8D4AA92 /* Pods_UberDriver2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2739AB5B42F72BC97364BB6D /* Pods-UberDriver2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberDriver2.debug.xcconfig"; path = "Target Support Files/Pods-UberDriver2/Pods-UberDriver2.debug.xcconfig"; sourceTree = "<group>"; };
 		2A14CC2029C511EF008BBE5C /* Stars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
+		2AC93DF329C6FF2000804CE4 /* Login Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Login Api.swift"; sourceTree = "<group>"; };
+		2AC93DF429C6FF2000804CE4 /* SingUP Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SingUP Api.swift"; sourceTree = "<group>"; };
+		2AC93DF829C6FF2D00804CE4 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		2AC93DF929C6FF2D00804CE4 /* SingUPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingUPModel.swift; sourceTree = "<group>"; };
 		2AF6E27129C3329200E8253B /* UberDriver2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberDriver2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF6E27429C3329200E8253B /* UberDriver2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberDriver2App.swift; sourceTree = "<group>"; };
 		2AF6E28329C332C300E8253B /* CustomTrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTrip.swift; sourceTree = "<group>"; };
@@ -75,12 +84,13 @@
 		2AF6E2A329C332DF00E8253B /*  DriverRegistration5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " DriverRegistration5.swift"; sourceTree = "<group>"; };
 		2AF6E2A429C332DF00E8253B /* SuccessfulScreen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessfulScreen2.swift; sourceTree = "<group>"; };
 		2AF6E2A529C332DF00E8253B /* NotificationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationScreen.swift; sourceTree = "<group>"; };
-		2AF6E2A629C332DF00E8253B /* SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		2AF6E2A729C332DF00E8253B /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		2AF6E2A829C332DF00E8253B /* AddBankAccountScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBankAccountScreen.swift; sourceTree = "<group>"; };
 		2AF6E2C229C3330700E8253B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2AF6E2C429C3331600E8253B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AF6E2C829C3420F00E8253B /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
+		3CAD7DCA44755553F8D4AA92 /* Pods_UberDriver2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberDriver2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C8CFF6C080E7A8A6802776 /* Pods-UberDriver2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberDriver2.release.xcconfig"; path = "Target Support Files/Pods-UberDriver2/Pods-UberDriver2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,17 +98,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6310F905BE193A03BA028ED1 /* Pods_UberDriver2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AC93DF229C6FF2000804CE4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2AC93DF329C6FF2000804CE4 /* Login Api.swift */,
+				2AC93DF429C6FF2000804CE4 /* SingUP Api.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2AC93DF729C6FF2D00804CE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2AC93DF829C6FF2D00804CE4 /* LoginModel.swift */,
+				2AC93DF929C6FF2D00804CE4 /* SingUPModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2AF6E26829C3329200E8253B = {
 			isa = PBXGroup;
 			children = (
 				2AF6E27329C3329200E8253B /* UberDriver2 */,
 				2AF6E27229C3329200E8253B /* Products */,
+				4A5EB344BA0F0FAEBADB4D1A /* Pods */,
+				7C20E4FCD677076A33021F2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +144,8 @@
 		2AF6E27329C3329200E8253B /* UberDriver2 */ = {
 			isa = PBXGroup;
 			children = (
+				2AC93DF729C6FF2D00804CE4 /* Models */,
+				2AC93DF229C6FF2000804CE4 /* Network */,
 				2AF6E28F29C332DF00E8253B /* Screens */,
 				2AF6E28229C332C300E8253B /* Customs */,
 				2AF6E27429C3329200E8253B /* UberDriver2App.swift */,
@@ -147,6 +180,8 @@
 		2AF6E28F29C332DF00E8253B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2AF6E2A229C332DF00E8253B /* WelcomeScreen.swift */,
+				2AF6E2A729C332DF00E8253B /* LoginScreen.swift */,
 				2AF6E29129C332DF00E8253B /* signUpScreen.swift */,
 				2AF6E29D29C332DF00E8253B /* DriverRegistration.swift */,
 				2AF6E29929C332DF00E8253B /* DriverRegistration2.swift */,
@@ -166,14 +201,28 @@
 				2AF6E29F29C332DF00E8253B /* CashoutScreen.swift */,
 				2AF6E2A029C332DF00E8253B /* RequestScreen.swift */,
 				2AF6E2A129C332DF00E8253B /* SuccessfulScreen.swift */,
-				2AF6E2A229C332DF00E8253B /* WelcomeScreen.swift */,
 				2AF6E2A429C332DF00E8253B /* SuccessfulScreen2.swift */,
 				2AF6E2A529C332DF00E8253B /* NotificationScreen.swift */,
-				2AF6E2A629C332DF00E8253B /* SwiftUIView.swift */,
-				2AF6E2A729C332DF00E8253B /* LoginScreen.swift */,
 				2AF6E2A829C332DF00E8253B /* AddBankAccountScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		4A5EB344BA0F0FAEBADB4D1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2739AB5B42F72BC97364BB6D /* Pods-UberDriver2.debug.xcconfig */,
+				E4C8CFF6C080E7A8A6802776 /* Pods-UberDriver2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C20E4FCD677076A33021F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CAD7DCA44755553F8D4AA92 /* Pods_UberDriver2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AF6E27F29C3329300E8253B /* Build configuration list for PBXNativeTarget "UberDriver2" */;
 			buildPhases = (
+				77465C6755F3E00EB16C2AC3 /* [CP] Check Pods Manifest.lock */,
 				2AF6E26D29C3329200E8253B /* Sources */,
 				2AF6E26E29C3329200E8253B /* Frameworks */,
 				2AF6E26F29C3329200E8253B /* Resources */,
+				D3B9B4040B8314BF21E5D787 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,6 +291,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77465C6755F3E00EB16C2AC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UberDriver2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B9B4040B8314BF21E5D787 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UberDriver2/Pods-UberDriver2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UberDriver2/Pods-UberDriver2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UberDriver2/Pods-UberDriver2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2AF6E26D29C3329200E8253B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -254,10 +347,12 @@
 				2AF6E2B629C332DF00E8253B /* DriverRegistration.swift in Sources */,
 				2AF6E28C29C332C300E8253B /* CustomRequest.swift in Sources */,
 				2AF6E2AD29C332DF00E8253B /* MyTripsScreen.swift in Sources */,
+				2AC93DFB29C6FF2D00804CE4 /* SingUPModel.swift in Sources */,
 				2AF6E28E29C332C300E8253B /* CustomReview.swift in Sources */,
 				2AF6E2B429C332DF00E8253B /* MyWallet2.swift in Sources */,
 				2AF6E2B929C332DF00E8253B /* RequestScreen.swift in Sources */,
 				2AF6E2BB29C332DF00E8253B /* WelcomeScreen.swift in Sources */,
+				2AC93DFA29C6FF2D00804CE4 /* LoginModel.swift in Sources */,
 				2AF6E2BC29C332DF00E8253B /*  DriverRegistration5.swift in Sources */,
 				2AF6E2BD29C332DF00E8253B /* SuccessfulScreen2.swift in Sources */,
 				2AF6E2C129C332DF00E8253B /* AddBankAccountScreen.swift in Sources */,
@@ -270,13 +365,14 @@
 				2AF6E2B529C332DF00E8253B /* VichleManagementScreen.swift in Sources */,
 				2AF6E27529C3329200E8253B /* UberDriver2App.swift in Sources */,
 				2AF6E2C329C3330700E8253B /* ContentView.swift in Sources */,
+				2AC93DF629C6FF2000804CE4 /* SingUP Api.swift in Sources */,
 				2AF6E2A929C332DF00E8253B /* DriverRegistration6.swift in Sources */,
 				2AF6E2AB29C332DF00E8253B /* MyWallet1.swift in Sources */,
 				2AF6E2C929C3420F00E8253B /* CustomNavBar.swift in Sources */,
 				2AF6E28929C332C300E8253B /* CustomTrip.swift in Sources */,
-				2AF6E2BF29C332DF00E8253B /* SwiftUIView.swift in Sources */,
 				2AF6E2B229C332DF00E8253B /* DriverRegistration2.swift in Sources */,
 				2AF6E2AC29C332DF00E8253B /* DriverRegistration4.swift in Sources */,
+				2AC93DF529C6FF2000804CE4 /* Login Api.swift in Sources */,
 				2AF6E2BE29C332DF00E8253B /* NotificationScreen.swift in Sources */,
 				2AF6E2AF29C332DF00E8253B /* ReviewScreen.swift in Sources */,
 			);
@@ -401,6 +497,7 @@
 		};
 		2AF6E28029C3329300E8253B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2739AB5B42F72BC97364BB6D /* Pods-UberDriver2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -429,6 +526,7 @@
 		};
 		2AF6E28129C3329300E8253B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C8CFF6C080E7A8A6802776 /* Pods-UberDriver2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

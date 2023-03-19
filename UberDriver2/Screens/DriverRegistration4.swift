@@ -13,16 +13,16 @@ struct DriverRegistration4: View {
          
             VStack(spacing: 50){
                 
-                StarsView(rating: 3)
+                StarsView(rating: 2)
                 Text("Take a photo of your national identity card")
-                    .padding(.bottom, 50.0)
+                    .padding(.bottom, 0)
                 Spacer()
                 
                    VStack{
                      Button(action:{
                          
                      }){
-                         Image("Upload")
+                         Image(systemName: "arrow.up.to.line.compact")
                              .resizable()
                              .aspectRatio(contentMode: .fit)
                              .frame(width: 18, height: 18)
